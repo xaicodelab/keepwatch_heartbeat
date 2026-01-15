@@ -1,5 +1,5 @@
 <view class="container">
     <view class="btn-area">
-        <button type="primary" bind:tap="gotoHeartrate">开始心率测试</button>
+        <button type="primary" bind:tap="gotoHeartrate">开始心率测量</button>
     </view>
 </view>

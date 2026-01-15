@@ -1,5 +1,5 @@
 
-<view class='margin-xl bg-white padding-xl radius shadow-lg'  style="width: 652rpx; height: 1126rpx; display: block; box-sizing: border-box; position: relative; left: 0rpx; top: -2rpx">
+<view class="margin-xl bg-white padding-xl radius shadow-lg"  style="width: 652rpx; height: 1126rpx; display: block; box-sizing: border-box; position: relative; left: 0rpx; top: -2rpx">
     <camera device-position="back" frame-size="small" resolution="low" flash="on" binderror="error" style="width: 596rpx; height: 282rpx; position: relative; left: -22rpx; top: -29rpx; display: block; box-sizing: border-box"></camera>
     <view class='text-center margin-bottom text-lg  text-grey' style="position: relative; left: 0rpx; top: 31rpx">心率测量</view>
     <view class='text-content'>
@@ -18,8 +18,9 @@
 <view class='margin-xl bg-white padding-xl radius shadow-lg' >
   <view class='text-center margin-bottom text-lg  text-grey'>使用帮助</view>
   <view class='text-content'>
-    将手指放置在手机的后置摄像头上，即可测量心率。点击左上角的退出按钮即可结束本次测量。数据实时生成，退出即刻销毁测量数据。
+    请将手指放置在手机的后置摄像头上（要覆盖后置摄像头），即可测量心率。\n
+    点击左上角的退出按钮即可结束本次测量。数据实时生成，并未保存，退出即刻销毁测量数据。请自放心使用。\n
+    由于通过摄像头测量，受限于光线等因素，因此测量结果仅供参考。\n
+    如需要比较准确的结果，建议采用专业设备或到正规医院测量。\n
   </view>
 </view>
-
-

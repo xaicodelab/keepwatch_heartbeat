@@ -1,5 +1,4 @@
-// pages/bmp/index.js
-const sampleBuffer = []; //亮度集合
+const sampleBuffer = []; // 亮度集合
 const bpms = [];
 
 var graphCanvas;
@@ -8,7 +7,6 @@ var listner;
 var intervalId;
 
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -159,7 +157,6 @@ Page({
   },
   // 绘制心率图
   drawGraph(dataStats) {
-
     // 计算缩放比例
     const xScaling = graphCanvas.width / 300;
 
@@ -183,10 +180,7 @@ Page({
       let y = graphContext.lineWidth;
 
       if (sample.value !== 0) {
-        y =
-          (maxHeight * (sample.value - dataStats.min)) /
-          (dataStats.max - dataStats.min) +
-          graphContext.lineWidth;
+        y = (maxHeight * (sample.value - dataStats.min)) / (dataStats.max - dataStats.min) + graphContext.lineWidth;
       }
 
       if (y != previousY) {
@@ -209,7 +203,7 @@ Page({
         graphCanvas = res[0].node
         graphContext = graphCanvas.getContext('2d')
 
-        const dpr = wx.getSystemInfoSync().pixelRatio
+        const dpr = wx.getWindowInfo().pixelRatio
         graphCanvas.width = res[0].width * dpr
         graphCanvas.height = res[0].height * dpr
         graphContext.scale(1, 1)
@@ -221,8 +215,5 @@ Page({
     listner.stop();
     this.resetBuffer();
   }
-
-
-
 
 })

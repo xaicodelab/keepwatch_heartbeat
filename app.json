@@ -11,5 +11,15 @@
   "style": "v2",
   "componentFramework": "glass-easel",
   "sitemapLocation": "sitemap.json",
-  "lazyCodeLoading": "requiredComponents"
+  "lazyCodeLoading": "requiredComponents",
+  "subPackages": [
+        {
+            "root" : "package_hr",
+                "name":"xiaoyiyi",
+                "pages":[
+                    "pages/about/about",
+                    "pages/heartrate/index"
+                ]
+        }
+    ]
 }

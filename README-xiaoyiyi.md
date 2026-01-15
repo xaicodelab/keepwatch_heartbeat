@@ -18,7 +18,7 @@
 
 
 <div align=center>
-<img src="README.assets/image-20230712135804583.png" alt="image-20230712135445047" style="zoom: 67%;" />
+<img src="assets/readme_xyy/image-20230712135804583.png" alt="image-20230712135445047" style="zoom: 67%;" />
 </div>
 
 
@@ -54,7 +54,7 @@ $$该帧光强值 =\frac{单个通道的强度值}{像素的个数}$$
 ​		计算波峰个数的一种简单的实现方法是通过经验值测算出一条固定的基线，来判断历史采集的光强值，有多少个跃出基线的数据，就计作多少个波峰。
 
 <div align=center>
-<img src="README.assets/image-20230712141142423.png" alt="image-20230712141142423" style="zoom:50%;" />
+<img src="assets/readme_xyy/image-20230712141142423.png" alt="image-20230712141142423" style="zoom:50%;" />
 </div>
 
 <p align="center">
@@ -64,7 +64,7 @@ $$该帧光强值 =\frac{单个通道的强度值}{像素的个数}$$
 
 
 <div align=center>
-<img src="README.assets/image-20230712141230781.png" alt="image-20230712141230781" style="zoom:50%;" />
+<img src="assets/readme_xyy/image-20230712141230781.png" alt="image-20230712141230781" style="zoom:50%;" />
 </div>
 
 
@@ -96,7 +96,7 @@ $$BPM = \frac{测量最大实践}{平均跃出时间}$$
 
 ​		如下所示是最终实现的效果: 
 
-| <img src="README.assets/image-20230712141947630.png" alt="image-20230712141947630" style="zoom:50%;" /> | <img src="README.assets/image-20230712142011026.png" alt="image-20230712142011026" style="zoom:50%;" /> | <img src="README.assets/image-20230712142033753.png" alt="image-20230712142033753" style="zoom:50%;" /> |
+| <img src="assets/readme_xyy/image-20230712141947630.png" alt="image-20230712141947630" style="zoom:50%;" /> | <img src="assets/readme_xyy/image-20230712142011026.png" alt="image-20230712142011026" style="zoom:50%;" /> | <img src="assets/readme_xyy/image-20230712142033753.png" alt="image-20230712142033753" style="zoom:50%;" /> |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 
 

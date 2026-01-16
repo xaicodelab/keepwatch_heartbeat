@@ -3,7 +3,7 @@
 	<view class="weui-msg" style="padding-top: 10rpx;">
 		<!-- <view class="weui-msg__icon-area"><text class="weui-icon-success weui-icon_msg"></text></view> -->
         <view class="weui-msg__icon-area" style="display: flex; justify-content: center;">
-            <camera class="camera_cls" device-position="back" frame-size="small" resolution="low" flash="on" binderror="error" />
+            <camera class="camera_cls" device-position="back" frame-size="small" resolution="low" flash="on" binderror="errorTip" />
         </view>
 		<view class="weui-msg__text-area">
 			<view class="weui-msg__title" style="margin-bottom: 10px;">心率测量</view>

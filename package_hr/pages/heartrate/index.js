@@ -220,6 +220,19 @@ Page({
     this.resetBuffer();
     this.hideHeartrateLine();
   },
+  errorTip() {
+    wx.showModal({
+        title: '提示',
+        content: '由于未授相机权限，无法使用心率测量功能！',
+        success (res) {
+          if (res.confirm) {
+            console.log('用户点击确定')
+          } else if (res.cancel) {
+            console.log('用户点击取消')
+          }
+        }
+      });
+  },
   showHeartrateLine() {
     this.setData({
         heartrateLineFlag: true

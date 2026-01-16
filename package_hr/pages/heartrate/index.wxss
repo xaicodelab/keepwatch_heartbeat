@@ -169,10 +169,10 @@ button {
 
 /* BPM circle */
 #bpm-display-container {
-	height: 220px;
-	width: 320px;
-	max-width: 70vw;
-	max-height: 70vw;
+	width: 80vw;
+	height: 30vw;
+	/* max-width: 80vw;
+	max-height: 50vw; */
 	margin: 0 auto;
 	border: 9px solid var(--graph-color);
 	border-radius: 100%;
@@ -180,7 +180,7 @@ button {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 0em auto 3em auto;
+	margin: 0em auto 1em auto;
 	cursor: pointer;
 }
 

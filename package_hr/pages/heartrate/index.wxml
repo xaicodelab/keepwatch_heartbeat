@@ -6,23 +6,23 @@
             <camera class="camera_cls" device-position="back" frame-size="small" resolution="low" flash="on" binderror="error" />
         </view>
 		<view class="weui-msg__text-area">
-			<view class="weui-msg__title">心率测量</view>
-			<view class="weui-msg__desc">
+			<view class="weui-msg__title" style="margin-bottom: 10px;">心率测量</view>
+			<view class="weui-msg__desc" style="margin-bottom: 10px;">
                 <!-- 内容详情，可根据实际需要安排，如果换行则不超过规定长度，居中展现
                 <navigator class="weui-wa-hotarea weui-link" url="javascript:">文字链接</navigator> -->
                 <view class="text-content">
-                    <section id="bpm-display-container" style="position: relative; top: 0rpx">
+                    <section id="bpm-display-container" style="position: relative;">
                         <div id="bpm-display">
                             <output id="bpm-value" title="Heart rate">{{bpm}}</output>
                             <label>bpm</label>
                         </div>
                     </section>
                     <section id="graph-container">
-                        <canvas type="2d" id="heartRate" style="width: 552rpx; height: 306rpx; position: relative; left: 0rpx; top: -138rpx; display: block; box-sizing: border-box" />
+                        <canvas type="2d" id="heartRate" style="width: 80vw; height: 50vw; position: relative; display: block; box-sizing: border-box" />
                     </section>
                 </view>
             </view>
-			<view class="weui-msg__custom-area">
+			<view class="weui-msg__custom-area" style="margin-top: 10px;">
                 <view class="help_area_title"><text>使用帮助</text></view>
 				<view class="weui-list-tips">
 					<view class="weui-list-tips__item" aria-role="option">请将手指放置在手机的后置摄像头上（要覆盖后置摄像头），即可测量心率。</view>

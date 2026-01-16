@@ -16,6 +16,7 @@ Page({
     startBtn: true,
     stopBtn: false,
     time: 30,
+    heartrateLineFlag: false
   },
   // 重置亮度数组
   resetBuffer() {
@@ -192,8 +193,7 @@ Page({
 
     graphContext.stroke();
   },
-
-  onShow: function () {
+  initCanvas() {
     let query = wx.createSelectorQuery()
     query.select('#heartRate').fields({
         node: true,
@@ -211,14 +211,28 @@ Page({
 
       this.processFrame();
   },
+  onShow: function () {
+    this.showHeartrateLine();
+    this.initCanvas();
+  },
   onUnload() {
     listner.stop();
     this.resetBuffer();
+    this.hideHeartrateLine();
+  },
+  showHeartrateLine() {
+    this.setData({
+        heartrateLineFlag: true
+    });
+  },
+  hideHeartrateLine() {
+    this.setData({
+        heartrateLineFlag: false
+    });
   },
   goBack() {
     wx.navigateBack({
         delta: 1
     });
   }
-
 })

@@ -1,5 +1,19 @@
-<view class="container">
-    <view class="btn-area">
-        <button type="primary" bind:tap="gotoHeartrate">开始心率测量</button>
-    </view>
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
+	<view class="weui-msg">
+		<view class="weui-msg__text-area">
+			<view class="weui-msg__desc">正常心率范围</view>
+			<view class="weui-msg__desc-primary">60-100次/分钟</view>
+		</view>
+		<view class="weui-msg__opr-area">
+			<view class="weui-btn-area">
+				<!-- <navigator class="weui-btn weui-btn_primary" aria-role="button" url="javascript:history.back();">推荐操作</navigator> -->
+                <button type="primary" bind:tap="gotoHeartrate">开始测量心率</button>
+			</view>
+		</view>
+		<view class="weui-msg__tips-area">
+			<view class="weui-msg__tips">
+                点击按钮可跳转到心率测量页面
+            </view>
+		</view>
+	</view>
 </view>

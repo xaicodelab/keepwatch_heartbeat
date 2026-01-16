@@ -1,4 +1,3 @@
-
 <view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
 	<view class="weui-msg" style="padding-top: 10rpx;">
 		<!-- <view class="weui-msg__icon-area"><text class="weui-icon-success weui-icon_msg"></text></view> -->

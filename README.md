@@ -6,5 +6,5 @@
 > 小依医项目说明-[README-xiaoyiyi.md](README-xiaoyiyi.md)
 
 ## 技术说明
-本项目采用 [微信原生小程序](https://developers.weixin.qq.com/miniprogram/dev/framework/) + [WeUI](https://wechat-miniprogram.github.io/weui/docs/) 开发
+本项目采用 [微信原生小程序](https://developers.weixin.qq.com/miniprogram/dev/framework/) + [WeUI](https://wechat-miniprogram.github.io/weui/docs/) 开发。
 > WeUI项目地址：[https://github.com/Tencent/weui-wxss/](https://github.com/Tencent/weui-wxss/)

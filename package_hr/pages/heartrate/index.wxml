@@ -1,26 +1,41 @@
 
-<view class="margin-xl bg-white padding-xl radius shadow-lg"  style="width: 652rpx; height: 1126rpx; display: block; box-sizing: border-box; position: relative; left: 0rpx; top: -2rpx">
-    <camera device-position="back" frame-size="small" resolution="low" flash="on" binderror="error" style="width: 596rpx; height: 282rpx; position: relative; left: -22rpx; top: -29rpx; display: block; box-sizing: border-box"></camera>
-    <view class='text-center margin-bottom text-lg  text-grey' style="position: relative; left: 0rpx; top: 31rpx">心率测量</view>
-    <view class='text-content'>
-    <section id="bpm-display-container" style="position: relative; left: 1rpx; top: 0rpx">
-			<div id="bpm-display">
-				<output id="bpm-value" title="Heart rate">{{bpm}}</output>
-				<label>bpm</label>
-			</div>
-      
-		</section>
-		<section id="graph-container">
-			<canvas type="2d" id="heartRate" style="width: 552rpx; height: 306rpx; position: relative; left: 0rpx; top: -138rpx; display: block; box-sizing: border-box"></canvas>
-		</section>
-  </view>
-</view>
-<view class='margin-xl bg-white padding-xl radius shadow-lg' >
-  <view class='text-center margin-bottom text-lg  text-grey'>使用帮助</view>
-  <view class='text-content'>
-    请将手指放置在手机的后置摄像头上（要覆盖后置摄像头），即可测量心率。\n
-    点击左上角的退出按钮即可结束本次测量。数据实时生成，并未保存，退出即刻销毁测量数据。请自放心使用。\n
-    由于通过摄像头测量，受限于光线等因素，因此测量结果仅供参考。\n
-    如需要比较准确的结果，建议采用专业设备或到正规医院测量。\n
-  </view>
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
+	<view class="weui-msg" style="padding-top: 10rpx;">
+		<!-- <view class="weui-msg__icon-area"><text class="weui-icon-success weui-icon_msg"></text></view> -->
+        <view class="weui-msg__icon-area" style="display: flex; justify-content: center;">
+            <camera class="camera_cls" device-position="back" frame-size="small" resolution="low" flash="on" binderror="error" />
+        </view>
+		<view class="weui-msg__text-area">
+			<view class="weui-msg__title">心率测量</view>
+			<view class="weui-msg__desc">
+                <!-- 内容详情，可根据实际需要安排，如果换行则不超过规定长度，居中展现
+                <navigator class="weui-wa-hotarea weui-link" url="javascript:">文字链接</navigator> -->
+                <view class="text-content">
+                    <section id="bpm-display-container" style="position: relative; top: 0rpx">
+                        <div id="bpm-display">
+                            <output id="bpm-value" title="Heart rate">{{bpm}}</output>
+                            <label>bpm</label>
+                        </div>
+                    </section>
+                    <section id="graph-container">
+                        <canvas type="2d" id="heartRate" style="width: 552rpx; height: 306rpx; position: relative; left: 0rpx; top: -138rpx; display: block; box-sizing: border-box" />
+                    </section>
+                </view>
+            </view>
+			<view class="weui-msg__custom-area">
+                <view class="help_area_title"><text>使用帮助</text></view>
+				<view class="weui-list-tips">
+					<view class="weui-list-tips__item" aria-role="option">请将手指放置在手机的后置摄像头上（要覆盖后置摄像头），即可测量心率。</view>
+					<view class="weui-list-tips__item" aria-role="option">点击返回按钮即可结束本次测量。数据实时生成，并未采集和保存，退出即刻销毁测量数据，请放心使用。</view>
+					<view class="weui-list-tips__item" aria-role="option">由于通过摄像头测量，受限于光线等因素，因此测量结果仅供参考。</view>
+                    <view class="weui-list-tips__item" aria-role="option">如需要比较准确的结果，建议采用专业设备或到正规机构测量。</view>
+				</view>
+			</view>
+		</view>
+		<view class="weui-msg__opr-area">
+			<view class="weui-btn-area">
+                <button class="weui-btn weui-btn_primary" aria-role="button" type="primary" bind:tap="goBack">返回</button>
+			</view>
+		</view>
+	</view>
 </view>

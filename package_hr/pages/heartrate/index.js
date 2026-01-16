@@ -214,6 +214,11 @@ Page({
   onUnload() {
     listner.stop();
     this.resetBuffer();
+  },
+  goBack() {
+    wx.navigateBack({
+        delta: 1
+    });
   }
 
 })

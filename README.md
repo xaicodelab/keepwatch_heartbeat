@@ -1,6 +1,6 @@
 # 守望心动微信小程序
 
-![小程序码图片](./readme/gh_ad75b2741b42_258.jpg "守望心动微信小程序")
+![小程序码图片](./assets/readme/gh_ad75b2741b42_258.jpg "守望心动微信小程序")
 
 ## 项目说明
 本项目的心率测试功能是在开源项目-小依医（GitHub地址：[https://github.com/wxliu07/xiao-yiyi](https://github.com/wxliu07/xiao-yiyi)）

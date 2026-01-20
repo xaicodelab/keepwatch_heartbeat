@@ -16,7 +16,8 @@ Page({
     startBtn: true,
     stopBtn: false,
     time: 30,
-    heartrateLineFlag: false
+    heartrateLineFlag: false,
+    infoBarFlag: false
   },
   // 重置亮度数组
   resetBuffer() {
@@ -116,6 +117,7 @@ Page({
 
       const cover = this.checkCover(frame);
       if (cover) {
+        this.hideInfoBar();
         // 从摄像头获取一帧
         const value = this.averageBrightness(frame);
         const time = Date.now();
@@ -142,6 +144,8 @@ Page({
           }
         }
         this.drawGraph(dataStats);
+      } else {
+        this.showInfoBar();
       }
     });
     listner.start();
@@ -247,5 +251,18 @@ Page({
     wx.navigateBack({
         delta: 1
     });
+  },
+  showInfoBar() {
+    this.setData({
+        infoBarFlag: true
+    });
+  },
+  hideInfoBar() {
+    this.setData({
+        infoBarFlag: false
+    });
+  },
+  closeInfoBar() {
+    this.hideInfoBar();
   }
 })

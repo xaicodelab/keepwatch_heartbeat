@@ -1,5 +1,17 @@
 <view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
-	<view class="weui-msg" style="padding-top: 10rpx;">
+    <view class="page__bd page__bd_spacing">
+		<view class="weui-information-bar weui-information-bar_warn-strong" aria-role="alert" wx:if="{{infoBarFlag}}">
+			<view class="weui-information-bar__hd">
+				<text class="weui-icon-outlined-warn"></text>
+			</view>
+			<view class="weui-information-bar__bd">请将手指完全覆盖住后置摄像头</view>
+			<view class="weui-information-bar__ft">
+				<!-- <navigator class="weui-link" url="#">详情</navigator> -->
+				<button class="weui-btn_icon" bind:tap="closeInfoBar">关闭<text class="weui-icon-close-thin"></text></button>
+			</view>
+		</view>
+    </view>
+	<view class="weui-msg" style="padding-top: {{infoBarFlag ? 120 : 10}}rpx;">
 		<!-- <view class="weui-msg__icon-area"><text class="weui-icon-success weui-icon_msg"></text></view> -->
         <view class="weui-msg__icon-area" style="display: flex; justify-content: center;">
             <camera class="camera_cls" device-position="back" frame-size="small" resolution="low" flash="on" binderror="errorTip" />

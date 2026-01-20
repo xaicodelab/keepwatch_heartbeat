@@ -20,7 +20,6 @@
             "root" : "package_hr",
                 "name":"xiaoyiyi",
                 "pages":[
-                    "pages/about/about",
                     "pages/heartrate/index"
                 ]
         }
